@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://dx82p7iq8xpkt"]
+
+[ext_resource type="FontFile" uid="uid://bbprd2hersu7x" path="res://assets/fonts/Nunito-Regular.ttf" id="1_as0k1"]
+[ext_resource type="Script" path="res://base_button.gd" id="2_ycd28"]
+[ext_resource type="AudioStream" uid="uid://ujyo5ye0lldf" path="res://assets/card_matched.wav" id="3_qadsa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g6ea6"]
+bg_color = Color(0.388235, 0.6, 0.298039, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtkns"]
+bg_color = Color(0.388235, 0.6, 0.298039, 0.541176)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qvibc"]
+bg_color = Color(0.780392, 0.368627, 0.227451, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_baqgn"]
+
+[node name="Retry" type="Button"]
+custom_minimum_size = Vector2(150, 0)
+theme_override_constants/outline_size = 1
+theme_override_constants/h_separation = 1
+theme_override_fonts/font = ExtResource("1_as0k1")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_g6ea6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rtkns")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qvibc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_baqgn")
+text = "RETRY"
+script = ExtResource("2_ycd28")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3
+stream = ExtResource("3_qadsa")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

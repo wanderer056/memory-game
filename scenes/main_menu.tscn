@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxkay5d2vw61t"]
+
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_7adl6"]
+[ext_resource type="FontFile" uid="uid://bd7c3ke124ivy" path="res://assets/fonts/Nunito-Bold.ttf" id="2_sdmul"]
+[ext_resource type="PackedScene" uid="uid://dx82p7iq8xpkt" path="res://base_button.tscn" id="2_yw2ms"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ba6uf"]
+bg_color = Color(0.584314, 0.290196, 0.305882, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kva4v"]
+bg_color = Color(0.517647, 0.384314, 0.427451, 0.611765)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7adl6")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.584314, 0.439216, 0.486275, 1)
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -432.5
+offset_top = 150.0
+offset_right = 387.5
+offset_bottom = 288.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.968627, 0.968627, 0.968627, 1)
+theme_override_fonts/font = ExtResource("2_sdmul")
+theme_override_font_sizes/font_size = 100
+text = "MATCH THE PAIRS!!"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -28.0
+offset_right = 75.0
+offset_bottom = 28.0
+grow_horizontal = 2
+theme_override_constants/separation = 100
+
+[node name="StartButton" parent="VBoxContainer" instance=ExtResource("2_yw2ms")]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 2
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_ba6uf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kva4v")
+text = "START"
+
+[node name="SelectLevelButton" parent="VBoxContainer" instance=ExtResource("2_yw2ms")]
+custom_minimum_size = Vector2(650, 150)
+layout_mode = 2
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_ba6uf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kva4v")
+text = "SELECT LEVEL"
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SelectLevelButton" to="." method="_on_select_level_button_pressed"]
