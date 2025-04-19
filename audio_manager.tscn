@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://b78xs1tkx2g01"]
+[gd_scene load_steps=4 format=3 uid="uid://bv3t6nnxk713c"]
 
 [ext_resource type="Script" path="res://audio_manager.gd" id="1_73t2n"]
 [ext_resource type="AudioStream" uid="uid://bcatbhb5uxtno" path="res://assets/cruising-down-8bit-lane-159615.mp3" id="2_cfj16"]

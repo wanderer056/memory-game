@@ -1,8 +1,8 @@
 [gd_scene load_steps=17 format=3 uid="uid://bvwjfmxn81csd"]
 
 [ext_resource type="Script" path="res://scenes/level_select_menu.gd" id="1_2cxvj"]
-[ext_resource type="LabelSettings" uid="uid://djgahar21djg1" path="res://new_label_settings.tres" id="1_epioj"]
-[ext_resource type="PackedScene" uid="uid://dx82p7iq8xpkt" path="res://base_button.tscn" id="2_oo1qd"]
+[ext_resource type="LabelSettings" uid="uid://dpiqlded8dfuy" path="res://new_label_settings.tres" id="1_epioj"]
+[ext_resource type="PackedScene" uid="uid://dxixcpax17x0l" path="res://base_button.tscn" id="2_oo1qd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c6ew7"]
 bg_color = Color(0.388235, 0.6, 0.298039, 1)
@@ -15,25 +15,25 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_1dxsj"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_kc34n"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_fefp4"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_0ui4u"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_qsug8"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_wjpbc"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_cduu8"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_0ysxk"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_fuysm"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_kxy61"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_j0m6i"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_v2oyq"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_8wvvh"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_kwu30"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_lnvgm"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_l1y6j"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_75ofk"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_uunnk"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_q57e0"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_px02h"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_crr0w"]
 bg_color = Color(0.403922, 0.25098, 0.25098, 1)
@@ -100,7 +100,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_1dxsj")
+button_group = SubResource("ButtonGroup_kc34n")
 text = "1"
 level_selected = 1
 
@@ -109,7 +109,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_fefp4")
+button_group = SubResource("ButtonGroup_0ui4u")
 text = "2
 "
 level_selected = 2
@@ -119,7 +119,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_qsug8")
+button_group = SubResource("ButtonGroup_wjpbc")
 text = "3
 "
 level_selected = 3
@@ -129,7 +129,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_cduu8")
+button_group = SubResource("ButtonGroup_0ysxk")
 text = "4
 "
 level_selected = 4
@@ -139,7 +139,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_fuysm")
+button_group = SubResource("ButtonGroup_kxy61")
 text = "5
 "
 level_selected = 5
@@ -149,7 +149,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_j0m6i")
+button_group = SubResource("ButtonGroup_v2oyq")
 text = "6
 "
 level_selected = 6
@@ -159,7 +159,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_8wvvh")
+button_group = SubResource("ButtonGroup_kwu30")
 text = "7
 "
 level_selected = 7
@@ -169,7 +169,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_lnvgm")
+button_group = SubResource("ButtonGroup_l1y6j")
 text = "8"
 level_selected = 8
 
@@ -178,7 +178,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_75ofk")
+button_group = SubResource("ButtonGroup_uunnk")
 text = "9"
 level_selected = 9
 
@@ -187,7 +187,7 @@ custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 theme_override_styles/pressed = SubResource("StyleBoxFlat_c6ew7")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_q57e0")
+button_group = SubResource("ButtonGroup_px02h")
 text = "10"
 level_selected = 10
 

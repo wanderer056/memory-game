@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/game.gd" id="1_m76ft"]
 [ext_resource type="PackedScene" uid="uid://c2mmno84r6spm" path="res://scenes/card.tscn" id="2_2hjok"]
-[ext_resource type="PackedScene" uid="uid://kwrnejk1aa4x" path="res://hud.tscn" id="3_o3jl3"]
+[ext_resource type="PackedScene" path="res://hud.tscn" id="3_o3jl3"]
 [ext_resource type="AudioStream" uid="uid://ujyo5ye0lldf" path="res://assets/card_matched.wav" id="3_qws13"]
 [ext_resource type="AudioStream" uid="uid://vovexound8fk" path="res://assets/success-fanfare-trumpets-6185.mp3" id="4_st650"]
 [ext_resource type="AudioStream" uid="uid://duasaevxxd58" path="res://assets/next-level-160613.mp3" id="5_rudj1"]
